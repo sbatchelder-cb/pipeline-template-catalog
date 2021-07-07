@@ -1,8 +1,8 @@
 version: 1
 type: pipeline-template
 
-name: Basic Print Pipeline Job
-description: Basic Print Pipeline Job
+name: Template 1 Pipeline Job
+description: Temaplate 1 Pipeline Job
 parameters:
  - name: printThisString
    type: string
