@@ -1,0 +1,10 @@
+pipeline {
+  agent any
+  stages {
+    stage('BasicTemplate-Print') {
+      steps {
+        sh "echo ${printThisString}"
+      }
+    }
+  }
+}
