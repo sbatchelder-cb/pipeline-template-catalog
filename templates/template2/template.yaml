@@ -6,7 +6,7 @@ description: Temaplate 2 Pipeline Job
 parameters:
   - name: agentLabel
     type: string
-    default: "applicaation1"  
+    default: application1
   - name: printThisString
     type: string
     displayName: A String to be printed
