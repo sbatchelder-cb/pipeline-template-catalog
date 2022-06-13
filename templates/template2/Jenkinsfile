@@ -1,5 +1,7 @@
 pipeline {
-  agent any
+  agent {
+    label ${agentLabel}
+  }
   stages {
     stage('BasicTemplate-Print') {
       steps {

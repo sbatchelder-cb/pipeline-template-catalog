@@ -4,6 +4,9 @@ type: pipeline-template
 name: Template 2 Pipeline Job
 description: Temaplate 2 Pipeline Job
 parameters:
- - name: printThisString
-   type: string
-   displayName: A String to be printed
+  - name: agentLabel
+    type: string
+    default: "applicaation1"  
+  - name: printThisString
+    type: string
+    displayName: A String to be printed
