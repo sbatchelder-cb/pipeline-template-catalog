@@ -1,9 +1,15 @@
 pipeline {
+  parameters {
+    string(name: 'PARAM1', defaultValue: 'value1', description: 'what is the value of PARAM1')
+    string(name: 'PARAM2', defaultValue: 'value2', description: 'what is the value of PARAM2')
+  }
   agent any
   stages {
     stage('BasicTemplate-Print') {
       steps {
         sh "echo ${printThisString}"
+        sh "echo PARAM1: ${params.PARAM1}"
+        sh "echo PARAM2: ${params.PARAM2}"
       }
     }
   }
